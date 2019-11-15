@@ -1,11 +1,4 @@
-#
-# adventure module
-#
-
 import urllib.request as urllib2
-
-# for python 2, use
-# import urllib.request
 
 import random
 
@@ -494,7 +487,7 @@ class Location(Base):
     Base.__init__(self, name)
     self.description = description
     self.event = event
-    self.length , self.width = int(l_w.split('-'))
+    self.length , self.width = 3
     self.contents = {}
     self.exits = {}
     self.first_time = True
